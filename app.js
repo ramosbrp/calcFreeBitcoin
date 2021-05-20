@@ -10,14 +10,15 @@ const somarApostas = (n1, n2) => n1 + n2;
 const calcGanhoReal = (n1, n2) => n1 - n2;
 /// --- ///
 
-//Declaração de variáveis
-let num = Number.parseInt(document.querySelector("#entrada").value);
-let contagem = 1;
-let total = num;
-let { ganha, ganhoReal } = multi(num);
-let list = [];
-let i = 0;
 function myFunction() {
+  //Declaração de variáveis
+  let num = Number.parseInt(document.querySelector("#entrada").value);
+  let contagem = 1;
+  let total = num;
+  let { ganha, ganhoReal } = multi(num);
+  let list = [];
+  let i = 0;
+
   const list1 = (lista, total) => (list = [...lista, total]);
 
   list1(list, total);
