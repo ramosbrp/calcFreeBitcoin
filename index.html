@@ -9,21 +9,42 @@
 	
 </head>
 <body>	
-	<header id="principal">
-		<a href="">
-			<SPAN>free</SPAN>
-			bitcoin			
-		</a>		
-	</header>
+	
+	<div id="container">
 
-	<div id="primeira">
-		<div id="segunda">	
+		<!-- header -->
+		<div id="item1">
+			<a href="">
+				<SPAN>free</SPAN>
+				bitcoin			
+			</a>		
+		</div>
+
+		<!-- left -->
+		<div id="item2"></div>
+
+		<!-- main -->
+		<div id="item3">	
+
+			<!-- inserção de dados -->
 			<div id="terceira">		
-				<input type="text" id="entrada" placeholder="Digite um número"> 
-				<button onclick="myFunction()" id="btn">bet</button> <!-- Chama a funçao no JS -->
+				<input type="number" id="entrada" placeholder="Digite um número"> 
+
+				<!-- Chama a funçao no JS -->
+				<button onclick="myFunction()" id="btn">bet</button> 
+			</div>
+
+			<!-- Lista de apostas -->
+			<div id="lista">
 				<p id="p1"></p>				
 			</div>
 		</div>
+
+		<!-- right -->
+		<div id="item4"></div>
+
+		<!-- footer -->
+		<div id="item5">Hello world!</div>
 	</div>
 	<script type="text/javascript" src="./app.js"></script>	
 </body>
