@@ -10,42 +10,38 @@
 </head>
 <body>	
 	
-	<div id="container">
-
 		<!-- header -->
-		<div id="item1">
-			<a href="">
-				<SPAN>free</SPAN>
-				bitcoin			
+		<header>
+			<a href="#">
+				<h1>
+					<bold>Free</bold> 
+					<small>bitcoin</small>
+				</h1>			
 			</a>		
-		</div>
+		</header>
 
-		<!-- left -->
-		<div id="item2"></div>
+		<!-- inserção de dados -->
+		<section>	
+		<h3>Digite um número:</h3>
+		<div>	
+			<input type="number" id="entrada" placeholder="1440...">
+
+			<!-- Chama a funçao no JS -->
+			<button type="button" onclick="myFunction()" id="btn">bet</button> 
+		</div>  <!-- ESTA DIV SERÁ UM FORM, POR ENQUANTO APENAS UMA DIV PARA AGRUPAR O CONTEUDO EM LINHA. -->
+		</section>
 
 		<!-- main -->
-		<div id="item3">	
+		<main>	
 
-			<!-- inserção de dados -->
-			<div id="terceira">		
-				<input type="number" id="entrada" placeholder="Digite um número"> 
+		</main>
 
-				<!-- Chama a funçao no JS -->
-				<button onclick="myFunction()" id="btn">bet</button> 
-			</div>
-
-			<!-- Lista de apostas -->
-			<div id="lista">
-				<p id="p1"></p>				
-			</div>
-		</div>
-
-		<!-- right -->
-		<div id="item4"></div>
 
 		<!-- footer -->
-		<div id="item5">Hello world!</div>
-	</div>
+		<footer>
+			<h2>Hello world!</h2>
+		</footer>
+
 	<script type="text/javascript" src="./app.js"></script>	
 </body>
 </html>

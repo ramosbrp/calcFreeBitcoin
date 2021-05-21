@@ -1,129 +1,96 @@
+/* RESET SIMPLES  */
+
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
-#item1 {grid-area: header;}
-#item2 {grid-area: left}
-#item3 {grid-area: main}
-#item4 {grid-area: right}
-#item5 {grid-area: footer}
-
-#container{
-	display: grid;
-	background-color: #111111;
-
-	grid-template-areas:
-	'header header header header'
-	'left main main right'
-	'left main main right'
-	'left main main right'
-	'left main main right'
-	'left main main right'
-	'footer footer footer footer'
-
-}
-#item1{
-	height: 45px;
-	display: flex:
-	align-items: center;
-	justify-content: center;
-
-}
-
-#item1 a{
+a{
 	text-decoration: none;
-	font-family: 'Prosto One', cursive;
 	color: #00CCFF;
+}
+
+button, input{
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+/* AJUSTES NO BODY */
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: #00785a;
+	overflow-x: hidden;
+}
+
+
+/* HEADER & FOOTER */
+
+header, footer{
+	height: 10vh;
 	font-weight: bold;
 	font-size: 22px;
-	margin: auto 20px;
+	background-color: #111; 
 }
-span{
+
+header h1{
+	padding-left: 1.3rem;
+}
+
+header small{
 	color: #97FF6B;
 }
 
-/* left */
-#item2{
-	background-color: #cfcfcf ;	
-	height: 600px;
-}
+/* CAMPO DE INPUT */
 
-/* right */
-#item4{
-	background-color: #cfcfcf;
-}
-
-/*footer*/
-#item5{
-	background-color: #111; 
-	height: 100px;
-}
-#item3{
+section{
+	padding: 1rem;
 	display: grid;
-	background-color: #eaeaea;
-	padding: 50px;
+	place-items: center;
+}
+section h3{
+	color: rgb(218, 218, 218);
+	margin-bottom: 0.5rem;
 }
 
-/*Div principal - Está div serve para centralizar os inputs*/
-#terceira{
-	display: flex;
-	width: 400px;
-	height: 150px;
-	margin: 0 50%;
-	transform: translateX(-50%);
-	background-color: #00785a;
-	border-radius: 10px;
-}
-
-/*ccaixa de entrada*/
-input{
-	text-transform: uppercase;
-}
 #entrada{
-	margin: auto auto;
-	height: 39px;
 	background: rgba(0,0,0,.3);
-	color: #feba00;
 	border: 1px solid #004530;
 	border-radius: 3px;
-	font-size: 14px;
-	text-shadow: 0 1px #000;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.1);
-	text-align: center;
+	text-shadow: 0 1px #000;
+	font-size: 1rem;
 	font-weight: bold;
-	line-height: 1.6;
-	font-family: inherit;
-	width: 150px;
+	padding: 0.5rem 0.7rem;
+	width: 10rem;
+	transition: 0.3s;
 }
+
+#entrada:focus{
+border: 1px solid #135c46ce;
+}
+
 #btn{
 	color: #483704;
-	background-color: #edb408;
-	padding: 0px;
 	background: linear-gradient(to bottom,#f5cb08,#ebae08);
 	box-shadow: inset 0 1px 1px rgba(255,255,255,.45),0 1px 1px rgba(0,0,0,.45);
-	border: none;
+	border-radius: 3px;
 	cursor: pointer;
-	font-size: 1.25em;
+	font-size: 1rem;
 	font-weight: bold;
-	line-height: normal;
-	position: relative;
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-	transition: background-color 300ms ease-out;
-	width: 45px;
-	height: 39px;
-
-
+	transition: background-color 400ms ease-out;
+	padding: 0.5rem;
 }
 
-button{	
-	margin: auto auto;	
+#btn:hover{
+	background: linear-gradient(to bottom,#f3cb17,#c79409);
 }
-#listaAposta{
-	background-color: red;
-	
 
+/* CONTEÚDO PÓS INPUT */
 
+main{
+	height: calc(100vh - 10vh)
 }
