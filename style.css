@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 }
-
 #item1 {grid-area: header;}
 #item2 {grid-area: left}
 #item3 {grid-area: main}
@@ -15,7 +14,6 @@
 
 	grid-template-areas:
 	'header header header header'
-	'left main main right'
 	'left main main right'
 	'left main main right'
 	'left main main right'
@@ -46,7 +44,6 @@ span{
 /* left */
 #item2{
 	background-color: #cfcfcf ;	
-	height: 600px;
 }
 
 /* right */
@@ -57,7 +54,6 @@ span{
 /*footer*/
 #item5{
 	background-color: #111; 
-	height: 100px;
 }
 #item3{
 	display: grid;
@@ -123,7 +119,4 @@ button{
 }
 #listaAposta{
 	background-color: red;
-	
-
-
 }

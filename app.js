@@ -32,9 +32,9 @@ function myFunction() {
 	html += '<p>'+'Ganho real: '+ganhoReal+'</p>'
 	html += '<hr/>'
 	 document.getElementById('lista').innerHTML = html
-
+		rodar ()
   //Laço while para execução do programa
-  while (total <= 100) {
+  function rodar () {
 
     const apostado = num = somarValor(num);
 	html += '<p>'+'Aposta atual: '+apostado+'</p>'
@@ -44,23 +44,17 @@ function myFunction() {
 
 	const total2 = somarApostas(total, apostado)
 	html += '<p>'+'Total apostado: '+total2+'</p>'
-	list.push(total)
-
+	list.push(total2)
+console.log(list[list.length-1])
 	const ganhar = multi(apostado)
 	html += '<p>'+'Se ganhar: '+apostado+'</p>'
 	html += '<p>'+'Ganho real: '+calcGanhoReal(ganhar, list[i])+'</p>'
 	html += '<hr/>'
 	document.getElementById('lista').innerHTML = html
 	i++;
+		while (list[list.length-1]<=100){
+				rodar()
+		}
   } 
 
-  /*function diminuirValor(n2){
-	return Math.round(n2/1.4)
-}*/
-
-  //Alteração do corpo após clicar
-  //var corpo = document.body;
-
- // corpo.style.background = "rgb(0, 122, 92)";
-  //corpo.style.color = "#ffb13d";
 }
